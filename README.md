@@ -736,9 +736,43 @@ clear
 &#x23f5; *pytorch*: [*official website*](https://pytorch.org) *or refer to* [*yaml file*](https://github.com/jeffheaton/app_deep_learning/blob/main/install/pytorch-install-aug-2023.ipynb)
 ```shell
 # basic setup for pytorch conda in macOS
->> conda create -n torch                        # create new env
->> conda activate torch                         # activate 
+>> conda create -n env & conda activate env     # create new env
 >> pip3 install torch torchvision torchaudio    # torch website, select stable/nightly version
+
+
+# use mps 
+>> conda env create -f torch-conda.yml 
+```shell
+name: torch
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+    - python=3.11
+    - pip>=19.0
+    - pytorch 
+    - torchvision 
+    - torchaudio
+    - jupyter
+    - scikit-learn
+    - scipy
+    - pandas
+    - pandas-datareader
+    - matplotlib
+    - pillow
+    - tqdm
+    - requests
+    - h5py
+    - pyyaml
+    - flask
+    - boto3
+    - ipykernel
+    - pip:
+        - bayesian-optimization
+        - gym
+        - kaggle
+
+```
 
 # connect to jupyter notebook
 >> python -m ipykernel install --user --name torch --display-name "Python 3.10 (pytorch)"
