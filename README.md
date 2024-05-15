@@ -733,10 +733,10 @@ clear
 #    - install pytorch with python=3.9, then install tensorflow with python=3.10 if fine
 ```
 
-&#x23f5; *pytorch*: [*official website*](https://pytorch.org) *or refer to* [*yaml file*](https://github.com/jeffheaton/t81_558_deep_learning/tree/pytorch/install)
+&#x23f5; *pytorch*: [*official website*](https://pytorch.org) *or refer to* [*yaml file*](https://github.com/jeffheaton/app_deep_learning/blob/main/install/pytorch-install-aug-2023.ipynb)
 ```shell
 # basic setup for pytorch conda in macOS
->> conda env create -n torch                    # create new env
+>> conda create -n torch                        # create new env
 >> conda activate torch                         # activate 
 >> pip3 install torch torchvision torchaudio    # torch website, select stable/nightly version
 

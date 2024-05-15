@@ -49,6 +49,9 @@ plugins
 # dependency for nerd font patcher
 fontforge
 
+# clash or vpn servers, but maybe keep them later when you know what's inside
+clash
+
 # jupyter notebook 
 .ipynb_checkpoints
 
