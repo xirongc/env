@@ -742,8 +742,8 @@ clear
 
 # use mps 
 >> conda env create -f torch-conda.yml 
-```shell
-name: torch
+================= .yml =================
+name: [your-env-name]
 channels:
   - pytorch
   - conda-forge
@@ -771,8 +771,7 @@ dependencies:
         - bayesian-optimization
         - gym
         - kaggle
-
-```
+================= .yml =================
 
 # connect to jupyter notebook
 >> python -m ipykernel install --user --name torch --display-name "Python 3.10 (pytorch)"
